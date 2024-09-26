@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import Login from './components/Login';
+// import Login from './components/Login';
+import AppRoutes from './components/Routes';
 
 function App() {
-  return (<Login/>
+  return (<AppRoutes/>
   );
 
 
