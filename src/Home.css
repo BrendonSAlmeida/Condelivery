@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root, .hamburguerAll{
+
+    position: relative;
+    min-height: 100vh;
+    max-width: 100vw;
+    width: 100vw;
+}
+
+.icon{
+    position: absolute;
+    z-index: 4;
+    left: 1%;
+    width: fit-content;
+    height: 44px;
+    cursor: pointer;
+}
+
+.hamburger{
+    top: 50%;
+    left: 10%;
+    width: 30px;
+    height: 6px;
+    background: #BC65E4;
+    position: absolute;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.hamburger::before{
+
+    top: -12px;
+    content: '';
+    position: absolute;
+    width: 37px;
+    height: 6px;
+    background: #BC65E4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.hamburger::after{
+
+    top: 12px;
+    content: '';
+    position: absolute;
+    width: 37px;
+    height: 6px;
+    background: #BC65E4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    left: 1%;
+    padding: 45px 0 0;
+    flex-wrap: nowrap;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.list .listItems{
+    padding: 0;
+    list-style: none;
+}
+
+.list .listItems li{
+    margin: 2px 8px;
+    cursor: pointer;
+}
+
+.list .listItems li:hover{
+    font-weight: 800;
+}
+
+.icon.iconActive .hamburger{
+    background: transparent;
+    box-shadow: 0 2px 5px transparent;
+}
+
+.icon.iconActive .hamburger::after{
+    top: 0;
+    background: #BC65E4;
+    transform: rotate(225deg);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.icon.iconActive .hamburger::before{
+    top: 0;
+    background: #BC65E4;
+    transform: rotate(135deg);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu.menuOpen{
+    width: 150px;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    box-shadow: 10px 0px 69px rgba(0, 0, 0, 0.59);
+}
+
+.menu.menuClose{
+    display: none;
+    width: 0px;
+}
