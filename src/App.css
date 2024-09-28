@@ -13,7 +13,7 @@ html, body, #root{
 }
 
 .all{
-  background-image: url('./resouses/Condominio-pode-barrar-entregadores-de-subirem-ate-o-apartamento.png');
+  /* background-image: url(); */
   height: 100vh;
   background-size: cover;
   background-position: center;
