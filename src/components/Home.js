@@ -6,24 +6,26 @@ function Home() {
     const toggleMode = () => {
       setActive(!active);
     };
-  
     return (
-      <div className="hamburguerAll">
-        <div className=''>fef4efg
-        <div className={active ? "icon iconActive" : "icon"} onClick={toggleMode}>
-        <div className="hamburger hamburgerIcon"></div>
-        </div>
-        <div className={active ? "menu menuOpen" : "menu menuClose"}>
-            <div className='list'>
-             <ul className="listItems">
-                <li>Home</li>
-                <li>Configurações</li>
-                <li>Perfil</li>
-                <li>Sair</li>
-            </ul>
+      <div>
+        <div className='title'><h1 >Condelivery</h1></div>
+         <div className="hamburguerAll"> {/*menu hamburguer */}
+            <div className={active ? "icon iconActive" : "icon"} onClick={toggleMode}>
+                <div className="hamburger hamburgerIcon"></div>
           </div>
-        </div>
-        </div> 
+          <div className={active ? "menu menuOpen" : "menu menuClose"}>
+              <div className='list'>
+                <ul className="listItems">
+                  <li className='menuItens'>Home</li>
+                  <li className='menuItens'>Configurações</li>
+                  <li className='menuItens' >Perfil</li>
+                  <li className='menuItens' >Sair</li>
+                </ul>
+              </div>
+            </div>
+              <div><p>Alameda Mamoré , nº 809 - Apto 513 - 6º andar</p></div>
+              <div><h1>Bem vindo(a) de volta</h1></div>
+          </div>
       </div>
       
     );

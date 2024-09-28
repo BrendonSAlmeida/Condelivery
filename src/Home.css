@@ -7,8 +7,18 @@ html, body, #root, .hamburguerAll{
 
     position: relative;
     min-height: 100vh;
-    max-width: 100vw;
-    width: 100vw;
+    max-width: 100%;
+    width: 100%;
+
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #BC65E4;
+    background-color: black;
+    height: 60px;
+    height: 4rem;
 }
 
 .icon{
@@ -16,14 +26,14 @@ html, body, #root, .hamburguerAll{
     z-index: 4;
     left: 1%;
     width: fit-content;
-    height: 44px;
+    height: 65px;
     cursor: pointer;
 }
 
 .hamburger{
-    top: 50%;
+    top: -62%;
     left: 10%;
-    width: 30px;
+    width: 37px;
     height: 6px;
     background: #BC65E4;
     position: absolute;
@@ -69,6 +79,7 @@ html, body, #root, .hamburguerAll{
 .list .listItems{
     padding: 0;
     list-style: none;
+    font-size: 1.29rem;
 }
 
 .list .listItems li{
@@ -100,8 +111,9 @@ html, body, #root, .hamburguerAll{
 }
 
 .menu.menuOpen{
+    top: -40%;
     width: 150px;
-    height: 100vh;
+    height: 35vh;
     background: rgb(0, 0, 0);
     box-shadow: 10px 0px 69px rgba(0, 0, 0, 0.59);
 }
@@ -110,3 +122,4 @@ html, body, #root, .hamburguerAll{
     display: none;
     width: 0px;
 }
+
