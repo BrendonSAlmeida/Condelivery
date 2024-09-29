@@ -123,3 +123,19 @@ html, body, #root, .hamburguerAll{
     width: 0px;
 }
 
+.endereço{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bc65e4a9;
+    color: white;
+}
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    color: #BC65E4;
+}
+

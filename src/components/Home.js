@@ -23,8 +23,9 @@ function Home() {
                 </ul>
               </div>
             </div>
-              <div><p>Alameda Mamoré , nº 809 - Apto 513 - 6º andar</p></div>
-              <div><h1>Bem vindo(a) de volta</h1></div>
+              <div className='endereço'><p>Alameda Mamoré , nº 809 - Apto 513 - 6º andar</p></div>
+                <div className='inicio'><h1>Bem vindo(a) de volta</h1></div>
+                  <div ><p>Alameda Mamoré , nº 809 - Apto 513 - 6º andar</p></div>
           </div>
       </div>
       
