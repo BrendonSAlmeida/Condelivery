@@ -13,7 +13,7 @@ function Login() {
     console.log("Email:", email);
     console.log("Senha:", password);
    
-    if (email === 'teste@outlook.com' && password === '123fiap') {
+    if (email === 'teste@fiap.com' && password === '123fiap') {
       navigate('/Home');} 
     else {
       alert('Email ou senha inválidos.');
