@@ -17,7 +17,6 @@ html, body, #root, .hamburguerAll{
     justify-content: center;
     color: #BC65E4;
     background-color: black;
-    height: 60px;
     height: 4rem;
     font-size: large;
 }
@@ -88,9 +87,11 @@ html, body, #root, .hamburguerAll{
     cursor: pointer;
 }
 
+
 .list .listItems li:hover{
     font-weight: 800;
 }
+
 
 .icon.iconActive .hamburger{
     background: transparent;
@@ -113,10 +114,11 @@ html, body, #root, .hamburguerAll{
 
 .menu.menuOpen{
     top: -40%;
-    width: 150px;
+    width: 100%;
     height: 35vh;
     background: rgb(0, 0, 0);
     box-shadow: 10px 0px 69px rgba(0, 0, 0, 0.59);
+    
 }
 
 .menu.menuClose{
